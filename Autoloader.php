@@ -21,12 +21,32 @@ class Autoloader {
 			);
 	}
 
+	/**
+	 * 清空当前web目录
+	 *
+	 * @return void
+	 */
+	public static function clear()
+	{
+		$this->domainRoot = array();
+	}
+
+	/**
+	 * 返回当前实例
+	 *
+	 * @return object
+	 */
 	public static function instance()
 	{
 		return new static;
 	}
 
-	// 设置站点根目录
+	/**
+	 * 设置web目录
+	 *
+	 * @param sting $root
+	 * @return object
+	 */
 	public function setRoot($root = '')
 	{
 		if (!$root || !is_dir(realpath($root))) {
@@ -37,10 +57,15 @@ class Autoloader {
 		return $this;
 	}
 
+	/**
+	 * Autoloader 核心方法，加载对应文件
+	 *
+	 * @param string $class
+	 * @return bool
+	 */
 	protected function autoloader($class)
 	{
 		$file = str_replace('\\', DIRECTORY_SEPARATOR, $class) . '.php';
-
 		foreach ($this->domainRoot as $path) {
 			clearstatcache();
 			$path = $path . $file;
@@ -51,14 +76,18 @@ class Autoloader {
 				}
 			}
 		}
-
+		
 		return false;
 	}
-	// 初始化
+	
+	/**
+	 * 初始化
+	 *
+	 * @return object
+	 */
 	public function init()
 	{
 		spl_autoload_register(array($this, 'autoloader'));
-
 		return $this;
 	}
 }
