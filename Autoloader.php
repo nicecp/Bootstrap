@@ -26,7 +26,7 @@ class Autoloader {
 	 *
 	 * @return void
 	 */
-	public static function clear()
+	public static function Clear()
 	{
 		$this->domainRoot = array();
 	}
@@ -36,7 +36,7 @@ class Autoloader {
 	 *
 	 * @return object
 	 */
-	public static function instance()
+	public static function Instance()
 	{
 		return new static;
 	}
@@ -76,7 +76,7 @@ class Autoloader {
 				}
 			}
 		}
-		
+
 		return false;
 	}
 	
