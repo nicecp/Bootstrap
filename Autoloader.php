@@ -33,7 +33,7 @@ class Autoloader {
 			throw new \Exception('No root param export or invalid path');
 		}
 
-		$this->dominroot[] = realpath($root);
+		$this->domainRoot[] = realpath($root);
 		return $this;
 	}
 
