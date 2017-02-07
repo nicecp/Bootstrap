@@ -24,11 +24,13 @@ class Autoloader {
 	/**
 	 * 清空当前web目录
 	 *
-	 * @return void
+	 * @return object
 	 */
-	public static function Clear()
+	public function clear()
 	{
 		$this->domainRoot = array();
+
+		return $this;
 	}
 
 	/**
@@ -36,7 +38,7 @@ class Autoloader {
 	 *
 	 * @return object
 	 */
-	public static function Instance()
+	public static function instance()
 	{
 		return new static;
 	}
@@ -68,7 +70,7 @@ class Autoloader {
 		$file = str_replace('\\', DIRECTORY_SEPARATOR, $class) . '.php';
 		foreach ($this->domainRoot as $path) {
 			clearstatcache();
-			$path = $path . $file;
+			$path = $path . DIRECTORY_SEPARATOR .  $file;
 			if (is_file($path)) {
 				require_once $path;
 				if (class_exists($class, false)) {
