@@ -3,7 +3,7 @@
 
 require_once __DIR__ . '/../Autoloader.php';
 
-\Bootstrap\Autoloader::Instance()->Init();
+\Bootstrap\Autoloader::instance()->init();
 
 $object = new \Bootstrap\Test\TestClass();
 
