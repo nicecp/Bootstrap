@@ -10,7 +10,7 @@ namespace Bootstrap;
 class Autoloader {
 
 	// 站点根目录，可配置多个子目录
-	protected $dominRoot = array();
+	protected $domainRoot = array();
 
 	public function __construct()
 	{
