@@ -1,5 +1,5 @@
 {
-    "name": "null/Bootstrap",
+    "name": "nicecp/bootstrap",
     "type": "library",
     "keywords": [
         "bootstarp",
@@ -10,7 +10,7 @@
     "description": "Autoloader",
     "authors": [
         {
-            "name": "null",
+            "name": "nicecp",
             "email": "forward.nice.cp@gmail.com",
             "homepage": "www.iyov.io",
             "role": "Developer"
