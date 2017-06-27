@@ -1,0 +1,29 @@
+{
+    "name": "null/Bootstrap",
+    "type": "library",
+    "keywords": [
+        "bootstarp",
+        "autoloader"
+    ],
+    "homepage": "www.iyov.io",
+    "license": "MIT",
+    "description": "Autoloader",
+    "authors": [
+        {
+            "name": "null",
+            "email": "forward.nice.cp@gmail.com",
+            "homepage": "www.iyov.io",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "forward.nice.cp@gmail.com",
+        "issues": "https://github.com/nicecp/Bootstrap/issues",
+        "wiki": "https://github.com/nicecp/Bootstrap/",
+        "source": "https://github.com/nicecp/Bootstrap/"
+    },
+    "require": {
+        "php": ">=5.3"
+    },
+    "minimum-stability": "dev"
+}
