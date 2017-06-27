@@ -5,14 +5,14 @@
         "bootstarp",
         "autoloader"
     ],
-    "homepage": "www.iyov.io",
+    "homepage": "http://www.iyov.io",
     "license": "MIT",
     "description": "Autoloader",
     "authors": [
         {
             "name": "nicecp",
             "email": "forward.nice.cp@gmail.com",
-            "homepage": "www.iyov.io",
+            "homepage": "http://www.iyov.io",
             "role": "Developer"
         }
     ],
