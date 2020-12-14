@@ -52,7 +52,7 @@ class Autoloader {
 	public function setRoot($root = '')
 	{
 		if (!$root || !is_dir(realpath($root))) {
-			throw new \Exception('No root param export or invalid path');
+			throw new \Exception('No root param exposed or invalid path');
 		}
 
 		$this->domainRoot[] = realpath($root);
